@@ -1,24 +1,54 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
-class MyWidget extends StatefulWidget {
-  const MyWidget({super.key});
+class ProfilePage extends StatefulWidget {
+  const ProfilePage({super.key});
 
   @override
-  State<MyWidget> createState() => _MyWidgetState();
+  State<ProfilePage> createState() => _ProfilePageState();
 }
 
-class _MyWidgetState extends State<MyWidget> {
+class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Column(
-        children: [
-          Row(
-            children: [Text("Profile")],
-            
-          )
-        ],
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Padding(
+          padding:
+              const EdgeInsets.all(16.0), // Added padding for better spacing
+          child: Column(
+            crossAxisAlignment:
+                CrossAxisAlignment.start, // Align content to the start
+            children: [
+              const Text(
+                "PROFILE",
+                style: TextStyle(
+                  color: Colors.grey,
+                  fontSize: 24, // Added font size for better visibility
+                  fontWeight: FontWeight.bold, // Made text bold
+                ),
+              ),
+              const SizedBox(height: 20), // Spacer for vertical separation
+              Align(
+                // Align the container to the right
+                child: Container(
+                  padding: const EdgeInsets.all(
+                      10.0), // Padding inside the container
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(8), // Rounded corners
+                  ),
+                  child: const Text(
+                    "Your Text Here",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 16, // Added font size for better readability
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
