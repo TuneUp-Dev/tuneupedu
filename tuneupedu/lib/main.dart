@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       title: 'TuneUp Edu',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(),
-      home: const ProfilePage(),
+      home: const Profile(),
     );
   }
 }
