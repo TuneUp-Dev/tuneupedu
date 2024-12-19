@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1014929579030",
+    "project_id": "tuneupedu",
+    "storage_bucket": "tuneupedu.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1014929579030:android:3df0dd4017cc16ec136937",
+        "android_client_info": {
+          "package_name": "com.tuneup.edu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsCRqHZ1k6j46SjFaKjjPC_Jm7SfLnErk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
