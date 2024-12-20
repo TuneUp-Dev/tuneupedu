@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tuneupedu/screens/admin/side_nav/admin_menu_list.dart';
 import 'package:tuneupedu/theme/theme_provider.dart';
 
 class UserDashboardScreen extends StatefulWidget {
@@ -11,8 +12,16 @@ class UserDashboardScreen extends StatefulWidget {
 class _UserDashboardScreenState extends State<UserDashboardScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
+    double totalWidth = MediaQuery.of(context).size.width;
+
+    return Scaffold(
+      drawer: totalWidth < 800
+          ? const Drawer(
+              width: 250,
+              child: AdminMenuList(),
+            )
+          : null,
+      body: const Center(
         child: Column(
           children: [
             Text("User Dashboard"),
